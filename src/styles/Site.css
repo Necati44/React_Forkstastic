@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .file-field .file-path-wrapper .left {
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 10px;
+  }

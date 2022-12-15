@@ -44,6 +44,7 @@ const Card = ({ recipe }) => {
               >
                 SHOW MORE
               </NavLink>
+              <a> Ajouter aux recettes favorites <i className="material-icons" style={{color: '#FF4848'}}>favorite</i> </a>
             </div>
         </div>
     </div>

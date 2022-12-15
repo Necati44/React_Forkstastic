@@ -6,7 +6,7 @@ const Header = () => {
     <div className="navbar-fixed">
       <nav className="teal">
         <div className="nav-wrapper">
-          <a className="brand-logo left" style={{marginLeft: '10px'}}>Forktastic</a>
+          <btn className="brand-logo left" style={{marginLeft: '10px'}}>Forktastic</btn>
           <ul className="right hide-on-med-and-down">
             <li>
               <NavLink

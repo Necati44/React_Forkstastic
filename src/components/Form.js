@@ -31,7 +31,7 @@ const Form = () => {
   }
 
   useEffect(() => {
-    if (recipesData.length == 0) {
+    if (recipesData.length === 0) {
       setNotFound(true)
     } else {
       setNotFound(false)

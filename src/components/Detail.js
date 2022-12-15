@@ -8,7 +8,7 @@ import Ingredient from "./Ingredient";
 
 const Detail = () => {
     const [recipeData, setRecipeData] = useState("");
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams, ] = useSearchParams();
     const API_KEY = "4c7af75aba334e0ab6d7ec7d1f721f16";
 
     useEffect(() => {

@@ -16,7 +16,7 @@ const Card = ({ recipe }) => {
 
   const deleteStorage = () => {
     let storedData = window.localStorage.recipes.split(",");
-    let newData = storedData.filter((id) => id != recipe.id);
+    let newData = storedData.filter((id) => id !== recipe.id);
 
     window.localStorage.recipes = newData;
   };

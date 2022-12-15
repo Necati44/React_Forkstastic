@@ -25,15 +25,16 @@ const Form = () => {
       .catch((err) => console.log(err.response.data.message));
   }
 
-  //utiliser un boutton normal ou un submit, pour l'instant le submit ne fait rien
   const handleSubmit = event => {
     recherche();
     event.preventDefault();
   }
 
   useEffect(() => {
-    if (recipesData) {
+    if (recipesData.length == 0) {
       setNotFound(true)
+    } else {
+      setNotFound(false)
     }
   }, [recipesData]);
 
@@ -42,7 +43,7 @@ const Form = () => {
       <div>
         <form>
           <div className="file-field input-field">
-          <input type="button" value="Rechercher" className="btn" onClick={handleSubmit}/>
+          <input type="submit" value="Rechercher" className="btn" onClick={handleSubmit}/>
             <div className="file-path-wrapper">
               <input
                 type="text"
@@ -60,7 +61,7 @@ const Form = () => {
             .map((recipe) => (
                 <Card recipe={recipe} key={recipe.id} />
             ))}
-            {notFound && 
+            {notFound && recipesData && search && 
               <span>Aucune recette correspondante n'a été retrouvée.</span>
             }
         </div>

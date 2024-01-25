@@ -24,5 +24,5 @@ jobs:
       with:
         push: true
         tags: |
-          necati44/react_forktastic/cd:latest
-          necati44/react_forktastic/cd:${{ github.sha }}
+          necati44/ynov-cicd/cd:latest
+          necati44/ynov-cicd/cd:${{ github.sha }}

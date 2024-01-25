@@ -24,5 +24,5 @@ jobs:
       with:
         push: true
         tags: |
-          docker.io/necati44/ynov-cicd/cd:latest
-          docker.io/necati44/ynov-cicd/cd:${{ github.sha }}
+          docker.io/necati44/ynov-cicd:latest
+          docker.io/necati44/ynov-cicd:${{ github.sha }}
